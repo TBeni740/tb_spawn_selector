@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+
+body {
+    font-family: 'Fira Sans', sans-serif; 
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    overflow: hidden; 
+}
+
+#error-window {
+    background: linear-gradient(rgba(151, 14, 14, 0.822), rgb(218, 26, 26));;
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    top: 5px;
+    left: 41%;
+    border-radius: 5px;
+    word-wrap: break-word;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    display: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#error-window p {
+    margin: 7px;
+}
+
+#info-window {
+    width: 350px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    bottom: 60px;
+    border-radius: 5px;
+    display: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    word-wrap: break-word;
+    background: linear-gradient(rgba(14, 35, 151, 0.822), rgb(26, 93, 218));;
+    transition: width 0.2s, height 0.2s, font-size 0.2s;
+}
+
+#info-window p {
+    margin: 5px;
+}
+
+#SpawnSelector {
+    position: absolute;
+    width: 900px;
+    height: 150px;
+    top: 40px;
+    left: 26%;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#SpawnSelector .SpawnOption {
+    width: 150px;
+    height: 100px;
+    margin: 20px;
+    outline: none;
+    border: none;
+    border-radius: 10%;
+    background-color: rgba(14, 35, 151, 0.822);
+    box-shadow: 0 2px 4px 0 rgba(1, 6, 19, 0.993), 0 3px 10px 0 rgba(1, 6, 19, 0.993);
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    transition: width 0.2s, height 0.2s, font-size 0.2s, box-shadow 0.2s;
+}
+
+#SpawnSelector .SpawnOption p {
+    position: relative;
+    top: 1px;
+    color: white;
+}
+
+
+#SpawnSelector .SpawnOption:hover {
+    width: 170px;
+    height: 120px;
+    font-size: 19px;
+    box-shadow: 0 4px 8px 0 rgba(1, 6, 19, 0.993), 0 6px 20px 0 rgba(1, 6, 19, 0.993);
+}
