@@ -7,4 +7,4 @@ If you want to add the feature of last location you will need to extract player'
 
 **Notice** that at the end of the video, the ped just fall on the floor when he spawned, I managed to fix this problem.
 
-If you want to disable the auto appearance of the spawn selector UI when you loading into the server, just disable the playerSpawned event in the client.lua. After that trigger the tb_spawn_selector:turnOnSpawnSelector when ever you want the spawn selector UI to be showed on the screen.
+If you want to disable the auto appearance of the spawn selector UI when you loading into the server, just disable the playerSpawned event in the client.lua. After that trigger the **tb_spawn_selector:turnOnSpawnSelector** when ever you want the spawn selector UI to be showed on the screen.
