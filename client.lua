@@ -7,7 +7,7 @@ local selectedSpawn = vector4(453.4804, -651.4335,  28.23122, 341.99298095703)
 
 AddEventHandler("playerSpawned", function()
     local lastLoc = nil -- Using your framework get the player's last location (vector4) 
-    TriggerEvent('turnOnSpawnSelector', lastLoc)
+    TriggerEvent('tb_spawn_selector:turnOnSpawnSelector', lastLoc)
 end)
 
 local function SpawnPed(entity, location)
@@ -41,7 +41,7 @@ local function closeSpawnSelectorAndSpawnPlayer(entity, location)
     DoScreenFadeIn(500)
 end
 
-RegisterNetEvent('turnOnSpawnSelector', function(lastLocation)
+RegisterNetEvent('tb_spawn_selector:turnOnSpawnSelector', function(lastLocation)
     -- Getting player's entity
     entity = PlayerPedId()
 
