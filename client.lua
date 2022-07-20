@@ -11,7 +11,7 @@ AddEventHandler("playerSpawned", function()
 end)
 
 local function SpawnPed(entity, location)
-    SetEntityCoords(entity, location.x, location.y, location.z)
+    SetEntityCoords(entity, location.x, location.y, location.z, false, false, false, false)
     SetEntityHeading(entity, location.w)
 end
 
@@ -42,7 +42,7 @@ local function closeSpawnSelectorAndSpawnPlayer(entity, location)
 end
 
 RegisterNetEvent('tb_spawn_selector:turnOnSpawnSelector', function(lastLocation)
-    -- Getting player's entity
+    -- Getting player's ped
     entity = PlayerPedId()
 
     -- Setting player coords
